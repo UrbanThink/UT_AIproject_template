@@ -180,3 +180,12 @@ Good agentic work in this repository is:
 ## Final rule
 
 AI should accelerate disciplined engineering, not replace it.
+
+## Memory files and persistence
+
+Agents should persist long-lived, reviewable facts under the `/memories/` directory. See `.github/instructions/memory.instructions.md` for detailed rules. Key points:
+
+- Maintain a thematic index at `/memories/MEMORY.md` (index by topic, not chronologically).
+- Place detailed notes in separate thematic files under `/memories/` (e.g., `/memories/security.md`).
+- Follow the mandatory maintenance rule: « Mets à jour ou supprime les souvenirs qui s'avèrent erronés ou obsolètes. N'écris pas de souvenirs en double. »
+- Do not store secrets or sensitive information in `/memories/`.

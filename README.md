@@ -89,6 +89,11 @@ All generated code must still be reviewed for:
 - test coverage
 - architectural consistency
 
+## Memory compaction rules (project-specific)
+
+Project-specific memory compaction rules (thresholds, preservation exceptions, and operational steps) should be added to a dedicated instructions file: `.github/instructions/memory.compaction.md`. This keeps global guidance in `.github/instructions/memory.instructions.md` while allowing projects to tune compaction behavior.
+
+
 ## Utiliser ce dépôt comme template GitHub
 
 Ce dépôt peut servir de template pour créer rapidement de nouveaux projets suivant les bonnes pratiques du groupe.
