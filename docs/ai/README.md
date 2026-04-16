@@ -42,6 +42,8 @@ It does **not** redefine the rules already written in each file.
 | `frontend.instructions.md` | `src/frontend/**`, `src/ui/**`, `src/components/**`, `**/*.tsx`, `**/*.jsx`, `**/*.css` |
 | `tests.instructions.md` | `tests/**`, `__tests__/**`, `**/*.test.*`, `**/*.spec.*` |
 | `security.instructions.md` | `**/*` (global scope) |
+| `conventions.instructions.md` | `**/*` (global scope) |
+| `dependencies.instructions.md` | `**/package.json`, `**/requirements*.txt`, `**/pyproject.toml`, lockfiles |
 | `infra.instructions.md` | `infra/**`, `scripts/**`, `**/Dockerfile`, `**/*.yml`, `**/*.tf` |
 
 ---
@@ -64,9 +66,11 @@ See each `.agent.md` for full behavioral rules, handoffs, and constraints.
 
 | Prompt | Agent | Purpose |
 |---|---|---|
-| `ship-feature.prompt.md` | Planner | Plan and drive a feature to shippable state |
+| `ship-feature.prompt.md` | Planner | Ship a feature using the ship-feature skill workflow |
 | `fix-bug.prompt.md` | Planner | Root-cause analysis and safe fix |
 | `refactor-module.prompt.md` | Planner | Safe module refactoring |
+| `init-project.prompt.md` | Planner | Bootstrap a new project from this template |
+| `explain-code.prompt.md` | Planner | Explain code purpose, behavior, and design |
 | `add-tests.prompt.md` | Tester | Behavior-focused test coverage |
 | `review-code.prompt.md` | Reviewer | Critical code or plan review |
 | `harden-security.prompt.md` | Security Reviewer | Security-first analysis |

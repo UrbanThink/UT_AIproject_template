@@ -7,9 +7,9 @@ Fournir une arborescence standardisée pour démarrer de nouveaux projets avec l
 
 ## 1) Créer un nouveau projet depuis le template (méthode recommandée)
 
-- Sur GitHub : ouvre la page du dépôt `UT_AIproject_template` → bouton **Use this template** → crée le nouveau repo (choisis public/private).
+- Sur GitHub : ouvrir la page du dépôt `UT_AIproject_template` → bouton **Use this template** → créer le nouveau repo (public ou private).
 
-- Après création : clone, ajuste les métadonnées, configure CI et protections de branche.
+- Après création : cloner, ajuster les métadonnées, configurer CI et protections de branche.
 
 ## 2) Méthode CLI (alternatif)
 
@@ -46,25 +46,21 @@ git push -u origin main
 
 ## 4) Personnalisation recommandée
 
-- Revise les fichiers dans `.github/instructions/` et supprime ou adapte les règles non pertinentes.
-- Ajuste les `prompts` si certains workflows ne s'appliquent pas.
-- Ajuste les `skills` (checklist, templates) pour refléter le process operational du nouveau projet.
-- Documente dans `docs/ai/` toute décision spécifique (outils, conventions de nommage, pipelines).
+- Réviser les fichiers dans `.github/instructions/` et supprimer ou adapter les règles non pertinentes.
+- Ajuster les `prompts` si certains workflows ne s'appliquent pas.
+- Ajuster les `skills` (checklist, templates) pour refléter le processus opérationnel du nouveau projet.
+- Documenter dans `docs/ai/` toute décision spécifique (outils, conventions de nommage, pipelines).
 
 ## 5) Gouvernance du template
 
-- Versionne le template via les **releases** et publie un `CHANGELOG.md` pour suivre les évolutions.
-- Désigne un mainteneur (fichier `MAINTAINERS.md`) responsable des mises à jour du template.
-- Pour propager une mise à jour majeure vers les projets existants, documente une procédure de mise à jour (pull depuis template, script de migration, ou PR manuel).
+- Versionner le template via les **releases** et publier un `CHANGELOG.md` pour suivre les évolutions.
+- Désigner un mainteneur (fichier `MAINTAINERS.md`) responsable des mises à jour du template.
+- Pour propager une mise à jour majeure vers les projets existants, documenter une procédure de mise à jour (pull depuis template, script de migration, ou PR manuel).
 
-## 6) Si tu veux que je publie le dépôt comme template GitHub
+## 6) Activer le dépôt comme template GitHub
 
-Je peux :
-- créer `MAINTAINERS.md` et `CHANGELOG.md` automatiquement,
-- activer le repo comme template via l'API GitHub (nécessite token avec droits repo).
+Pour que le bouton **Use this template** apparaisse sur GitHub :
 
-Dis‑moi si tu veux que je crée `MAINTAINERS.md` maintenant, ou si tu veux que j'active la publication (je te demanderai un token ou tu pourras exécuter la commande `gh` localement).
-
----
-
-Fini — personnalise les éléments de la checklist selon ton équipe et dis‑moi si je dois automatiser la publication template.
+1. Aller dans **Settings** du dépôt.
+2. Cocher **Template repository**.
+3. Optionnel : créer `MAINTAINERS.md` et `CHANGELOG.md` pour la gouvernance.

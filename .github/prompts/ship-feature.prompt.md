@@ -1,25 +1,17 @@
 ---
 name: ship-feature
-description: Take a feature from repository-aligned plan to implementation, testing, and final review summary.
+description: Take a feature from request to shippable state using the ship-feature skill workflow.
 argument-hint: Describe the feature, expected behavior, constraints, and affected area.
 agent: Planner
 ---
 
-Your task is to plan and drive the implementation of a feature to a shippable state using the existing repository conventions.
+Your task is to ship a feature using the **ship-feature** skill.
 
-Follow this workflow:
+Load and follow the full workflow defined in `.github/skills/ship-feature/SKILL.md`.
 
-1. analyze the request and inspect the codebase
-2. identify impacted files, contracts, and dependencies
-3. produce a minimal implementation plan
-4. hand off to Builder for implementation
-5. hand off to Tester for behavior and regression coverage
-6. hand off to Reviewer for a critical final review
-7. summarize:
-   - what changed
-   - what was validated
-   - what remains risky
-   - what should be checked by a human reviewer before merge
+Use the [checklist](.github/skills/ship-feature/checklist.md) to verify completeness before finishing.
+
+Use the [PR summary template](.github/skills/ship-feature/templates/pr-summary.md) for the final output.
 
 Rules:
 

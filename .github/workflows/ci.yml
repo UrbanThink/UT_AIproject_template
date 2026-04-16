@@ -1,0 +1,44 @@
+# CI Pipeline
+#
+# This is a placeholder workflow. Adapt it to your stack after project initialization.
+# Uncomment and configure the sections relevant to your technology choice.
+
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Lint & Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # --- Node.js example (uncomment and adapt) ---
+      # - uses: actions/setup-node@v4
+      #   with:
+      #     node-version: '20'
+      #     cache: 'npm'
+      # - run: npm ci
+      # - run: npm run lint
+      # - run: npm test
+
+      # --- Python example (uncomment and adapt) ---
+      # - uses: actions/setup-python@v5
+      #   with:
+      #     python-version: '3.12'
+      #     cache: 'pip'
+      # - run: pip install -r requirements.txt
+      # - run: ruff check .
+      # - run: pytest
+
+      # --- Generic placeholder ---
+      - name: Placeholder
+        run: echo "Configure this workflow for your stack. See .github/prompts/init-project.prompt.md"
